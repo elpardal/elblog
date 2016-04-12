@@ -1,0 +1,10 @@
+= simple_form_for(@category) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+
+  .form-actions
+    .btn-group  
+      = f.button :submit, class: 'btn btn-primary'
+      = link_to t('.back'), categories_path, class: 'btn btn-default'

@@ -1,0 +1,20 @@
+pt-BR:
+  layouts:
+    application:
+      Articles: Artigos
+      Categories: Categorias
+  articles:
+    edit:
+      Editing article: Editar artigo
+    form:
+      back: Voltar
+    index:
+      title: Título
+      published_at: Publicado em
+      listing_articles: Artigos
+      new_article: Novo Artigo
+      show: Ver
+      edit: Editar
+      destroy: Deletar
+    show:
+      back: Voltar

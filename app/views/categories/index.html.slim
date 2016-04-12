@@ -1,0 +1,18 @@
+h1 = t('.listing_categories')
+
+table.table.table-striped
+  thead
+    tr
+      th = t('.title')
+      th
+
+  tbody
+    - @categories.each do |category|
+      tr
+        td
+          h4 = link_to category.title, edit_category_path(category)
+        td
+          .btn-group.pull-right
+            = link_to t('.destroy'), category, data: {:confirm => 'Are you sure?'}, :method => :delete, class:'btn btn-danger btn-sm'
+br
+= link_to t('.new_categorie'), new_category_path, class: 'btn btn-primary'

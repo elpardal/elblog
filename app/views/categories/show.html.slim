@@ -1,0 +1,9 @@
+- if notice
+  .alert.alert-info.alert-dismissible
+    button type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true" &times
+    = notice
+
+h1
+  = @category.title
+hr
+= link_to t('links.back'), categories_path, class: 'btn btn-default'

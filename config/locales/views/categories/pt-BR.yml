@@ -1,0 +1,15 @@
+pt-BR:
+  categories:
+    form:
+      back: Voltar
+    edit:
+      editing_category: 'Editar Categoria'
+    index:
+      title: Título
+      listing_categories: Categorias
+      new_categorie: Nova Categoria
+      show: Ver
+      edit: Editar
+      destroy: Deletar
+    new:
+    show:

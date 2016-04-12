@@ -1,0 +1,21 @@
+h1 = t('.listing_articles')
+
+table.table.table-striped
+  thead
+    tr
+      th = t('.title')
+      th = t('.published_at')
+      th
+
+  tbody
+    - @articles.each do |article|
+      tr
+        td = article.title
+        td = l article.published_at, format: :short
+        td
+          .btn-group.pull-right
+            = link_to t('.show'), article, class:'btn btn-default btn-sm'
+            = link_to t('.edit'), edit_article_path(article), class:'btn btn-default btn-sm'
+            = link_to t('.destroy'), article, data: {:confirm => 'Are you sure?'}, :method => :delete, class:'btn btn-default btn-sm'
+br
+= link_to t('.new_article'), new_article_path, class: 'btn btn-primary'
